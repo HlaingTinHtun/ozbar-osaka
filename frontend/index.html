@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Navbar</title>
+    <link rel="stylesheet" href="CSS/index.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">#OZ'bar . z</div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <nav class="menu" id="menu">
+            <a href="#">Menu</a>
+            <a href="#">About Us</a>
+            <a href="#">Events</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+    <div class="hero-overlay">
+        <h1>Welcome to Oz Bar </h1>
+        <p>AN HOMAGE TO THE JEWEL BOXES OF VINYL IN JAPAN</p>
+        <a href="#" class="hero-button">View Menu</a>
+    </div>
+</section>
+
+<section class="gradient-section">
+  <div class="gradient-container">
+    <div class="gradient-text">
+      <h2>Karaoke Nights at OZ’bar</h2>
+      <p>
+        Unleash your voice and enjoy fun-filled nights with friends in our lively karaoke lounge. Sing your heart out while sipping on your favorite drinks in a vibrant atmosphere.
+      </p>
+      <a href="/karaoke" class="karaoke-btn">🎶 Let’s Karaoke!</a>
+    </div>
+    <div class="gradient-image">
+      <img src="img/karaoke.jpg" alt="OZ Bar" />
+    </div>
+  </div>
+</section>
+
+<section class="four-grid">
+    <!-- Background video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="video/wine-glass.mp4" type="video/mp4">
+   
+  </video>
+
+
+    <div class="grid-container">
+      <div class="grid-item d">
+       <img src="img/oz-img.jpg" alt="Neon Lights">
+      </div>
+      <div class="grid-item b">
+        
+        <p>Unleash your inner star! Our karaoke nights bring friends together with laughter, music, and endless fun.</p>
+      </div>
+      <div class="grid-item c">
+        
+        <p>Sip on signature cocktails, enjoy smooth whiskey, or dance the night away. At OZ’bar, every drink is a story and every night is alive.</p>
+      </div>
+      <div class="grid-item d">
+        <img src="img/barneon.jpg" alt="">
+        
+      </div>
+    </div>
+  </section>
+
+
+    <script>
+        // Ensure the IDs match your HTML
+        const hamburger = document.getElementById("hamburger");
+        const menu = document.getElementById("menu");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active");
+        });
+
+
+        
+    </script>
+
+    <script>
+  // Fade-in on scroll
+  const section = document.querySelector(".gradient-section");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  observer.observe(section);
+</script>
+
+</body>
+</html>

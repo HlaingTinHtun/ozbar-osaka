@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/sample.css">
+  <style>
+    .four-grid {
+      padding: 60px 20px;
+      background: #fff; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 300px 300px; /* fixed size */
+      grid-template-rows: 300px 300px;    
+      gap: 0;   /* no gap */
+    }
+
+    .grid-item {
+      background: #fff;
+      text-align: left;
+      padding: 30px 25px;  /* more space inside */
+      font-size: 16px;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    /* Title style */
+    .grid-item h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    /* Text style */
+    .grid-item p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Special colors for B and C */
+    .grid-item.b {
+      background: #f21111;
+      color: #fff;
+    }
+
+    .grid-item.b h3, 
+    .grid-item.b p {
+      color: #fff; /* keep white text */
+    }
+
+    .grid-item.c {
+      background: #3333ff;
+      color: #fff;
+    }
+
+    .grid-item.c h3, 
+    .grid-item.c p {
+      color: #fff;
+    }
+
+    /* Remove border for A and D */
+    .grid-item.a,
+    .grid-item.d {
+      border: none;
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 650px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* single column */
+        grid-template-rows: auto;   /* auto height */
+      }
+
+      .grid-item {
+        min-height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="four-grid">
+    <div class="grid-container">
+      <div class="grid-item a">
+        <h3>Title A</h3>
+        <p>This is some descriptive text for section A. It explains content in more detail.</p>
+      </div>
+      <div class="grid-item b">
+        <h3>Title B</h3>
+        <p>This is text inside section B with a red background.</p>
+      </div>
+      <div class="grid-item c">
+        <h3>Title C</h3>
+        <p>Here goes the description for section C, styled with blue background.</p>
+      </div>
+      <div class="grid-item d">
+        <h3>Title D</h3>
+        <p>This could contain an image or some text later.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
