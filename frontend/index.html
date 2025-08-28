@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="CSS/bar-gallery.css">
 <link rel="stylesheet" href="CSS/map.css">
 <link rel="stylesheet" href="CSS/footer.css">
+<link rel="stylesheet" href="CSS/button.css">
 </head>
 <body>
 
@@ -35,13 +36,25 @@
       <!-- Desktop Menu Centered -->
       <div class="nav-left nav-menu">
         <div class="nav-menu-center">
-          <a href="#about" class="nav-link">ABOUT</a>
-          <a href="#menu" class="nav-link">MENU</a>
-          <a href="#bar-gallery" class="nav-link scroll-link">GALLERY</a>
+          <a href="#about" class="nav-link" data-key="about">ABOUT</a>
+          <a href="#menu" class="nav-link" data-key="menu">MENU</a>
+          <a href="#bar-gallery" class="nav-link scroll-link" data-key="gallery">GALLERY</a>
         </div>
         <div class="nav-menu-icons">
           <!-- <a href="https://facebook.com" target="_blank" class="nav-icon"><i class="fab fa-facebook-f"></i></a> -->
-          <a href="https://www.instagram.com/ozbar2021/" target="_blank" class="nav-icon"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="https://www.instagram.com/ozbar2021/" target="_blank" class="nav-icon"><i class="fab fa-instagram"></i></a> -->
+         <div class="lang-switch">
+  <div class="dropdown">
+    <button class="dropbtn">
+      Language <span class="arrow">&#9662;</span>
+    </button>
+    <div class="dropdown-content">
+      <a href="#" data-lang="en">English</a>
+      <a href="#" data-lang="jp">日本語</a>
+    </div>
+  </div>
+</div>
+
         </div>
       </div>
 
@@ -65,8 +78,8 @@
   <!-- Banner -->
   <section class="banner">
     <div class="banner-content">
-      <p>#OZ'.Bar / Drink • Chill • Repeat</p>
-      <p>A modern and retro Japanese-style <br>OZ'Bar</p>
+      <p data-key="tagline">#OZ'.Bar / Drink • Chill • Repeat</p>
+      <p data-key="tagline2">A modern and retro Japanese-style <br>OZ'Bar</p>
 
        <div class="location">
   <span>
@@ -328,14 +341,14 @@
     <div class="footer-container">
 
       <div class="footer-column">
-        <h4>ABOUT</h4>
-        <p>We are a cozy bar serving quality drinks and creating unforgettable moments for our guests</p>
+        <h4 data-key="about">ABOUT</h4>
+        <p data-key="cozy">We are a cozy bar serving quality drinks and creating unforgettable moments for our guests</p>
       </div>
 
       <div class="footer-column">
-        <h4>Contact</h4>
+        <h4 data-key="contact">Contact</h4>
         <ul>
-          <li><a href="#">123 Shinjuku ,Tokyo Japan</a></li>
+          <li><a href="#" data-key="address">123 Shinjuku ,Tokyo Japan</a></li>
           <li><a href="#"> 06-8786-8147</a></li>
           <li><a href="#">090-37248489</a></li>
           <li><a href="#">contact@ozbar.com</a></li>
@@ -344,16 +357,16 @@
       </div>
 
       <div class="footer-column">
-        <h4>Hours</h4>
+        <h4 data-key="hours">Hours</h4>
         <ul>
-          <p>Daily 10:00 AM - 2:00 AM</p>
-          <p>Closed Every Monday</p>
+          <p data-key="daily">Daily 10:00 AM - 2:00 AM</p>
+          <p data-key="closed">Closed Every Monday</p>
         </ul>
       </div>
 
       <div class="footer-column">
-        <h4>SOCIAL MEDIA</h4>
-        <p>Join the party online — follow us for news, events, and special offers.</p>
+        <h4 data-key="social_media">SOCIAL MEDIA</h4>
+        <p data-key="party">Join the party online — follow us for news, events, and special offers.</p>
         <div class="social">
       
           <a href="https://www.instagram.com/ozbar2021/"><i class="fab fa-instagram"></i></a>
@@ -436,8 +449,6 @@ const modal = document.getElementById("galleryModal");
 });
 
 
-
-    
   </script>
 
 </body>

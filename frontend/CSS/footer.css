@@ -94,15 +94,19 @@ footer {
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
+    align-items: center;   /* center the columns horizontally */
     text-align: center;
   }
 
   .footer-column {
-    margin: 10px 0;
+    margin: 5px 0;         /* reduce spacing between sections */
+    width: 100%;           /* make them stretch consistently */
+    max-width: 300px;      /* optional: limit width for nice alignment */
   }
 
   .social {
     justify-content: center;
+    margin-top: 8px;       /* reduce gap above social icons */
   }
   
 }

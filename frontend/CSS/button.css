@@ -1,0 +1,85 @@
+.lang-switch {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Rubik', sans-serif;
+  position: fixed;
+  top: 15px;   /* smaller offset */
+  right: 15px; /* keep some space from edge */
+  z-index: 9999; /* higher so always visible */
+}
+
+/* Tiny dropdown button */
+.dropbtn {
+  background-color: indigo;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5px;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.dropbtn:hover {
+  background-color: white;
+  border-color: #f21111;
+  color: indigo;
+}
+
+/* Arrow */
+.arrow {
+  font-size: 0.55rem;
+  transition: transform 0.2s ease;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  margin-top: 5px; /* avoid overlap */
+  position: absolute;
+  right: 0;
+  background-color: indigo;
+  min-width: 75px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 0.3rem 0.5rem;
+  display: block;
+  font-size: 0.7rem;
+  text-decoration: none;
+  text-align: center;
+}
+.dropdown-content a:hover {
+  background-color: white;
+  color: indigo;
+}
+
+/* Show dropdown */
+.dropdown.show .dropdown-content { display: block; }
+.dropdown.show .arrow { transform: rotate(180deg); }
+
+/* Mobile fixes */
+@media(max-width:480px){
+  .lang-switch {
+    top: 10px; 
+    right: 10px; /* keep margin so not cut */
+  }
+  .dropbtn {
+    font-size: 0.6rem;
+    padding: 0.12rem 0.35rem;
+  }
+  .dropdown-content a {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.4rem;
+  }
+}
