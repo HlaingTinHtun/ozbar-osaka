@@ -1,0 +1,87 @@
+   .brick-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 700px;
+      margin: 50px auto;
+      align-items: center;
+      justify-items: center;
+      gap: 0; /* no gap so they can touch */
+    }
+
+    .brick {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      padding: 10px;
+    }
+
+    .brick img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+     
+      display: block;
+    }
+
+    .brick p {
+      font-family: "Rubik", sans-serif;
+      font-size: 10px;
+      line-height: 1.5;
+      color: #333;
+      max-width: 220px;
+    }
+
+    /* Make image1 bottom-right corner touch image2 top-left corner */
+    .img1 {
+      grid-row: 1;
+      grid-column: 1;
+      align-self: end;
+      justify-self: end;
+    }
+    .img2 {
+      grid-row: 2;
+      grid-column: 2;
+      align-self: start;
+      justify-self: start;
+    }
+
+    /* Responsive */
+   /* Responsive */
+@media (max-width: 768px) {
+  .brick-section {
+    grid-template-columns: 1fr; /* single column */
+    gap: 20px; /* add spacing between bricks */
+    max-width: 90%; /* allow some margin on mobile */
+    margin: 30px auto;
+  }
+
+  .brick img {
+    width: 150px; /* smaller image on mobile */
+    height: 150px;
+  }
+
+  .brick p {
+    max-width: 100%; /* full width */
+    font-size: 14px; /* slightly smaller text */
+  }
+
+  /* Center images in stacked layout */
+  .img1, .img2 {
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/* Optional for very small screens */
+@media (max-width: 480px) {
+  .brick img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .brick p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
