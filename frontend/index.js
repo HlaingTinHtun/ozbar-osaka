@@ -131,3 +131,24 @@ document.querySelectorAll(".dropdown-content a").forEach(link => {
 // 4️⃣ Optional: set default language
 setLanguage("en");
 
+function moveLangSwitch() {
+  const langSwitch = document.querySelector('.lang-switch');
+  const footer = document.querySelector('.footer-lang-switch');
+  const navbar = document.querySelector('.navbar');
+
+  if (window.innerWidth <= 768) {
+    // move to footer
+    if (!footer.contains(langSwitch)) {
+      footer.appendChild(langSwitch);
+    }
+  } else {
+    // move back to navbar
+    if (!navbar.contains(langSwitch)) {
+      navbar.appendChild(langSwitch);
+    }
+  }
+}
+
+// Run on load and resize
+window.addEventListener('load', moveLangSwitch);
+window.addEventListener('resize', moveLangSwitch);
