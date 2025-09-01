@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sdlc">
+  <div class="stage" id="requirement">Requirement</div>
+  <div class="stage" id="design">Design</div>
+  <div class="stage" id="implementation">Implementation</div>
+  <div class="stage" id="testing">Testing</div>
+  <div class="stage" id="deployment">Deployment</div>
+  <div class="stage" id="maintenance">Maintenance</div>
+</div>
+<button onclick="nextStage()">Next Stage</button>
+
+<script>
+  let current = 0;
+  const stages = document.querySelectorAll('.stage');
+  function nextStage() {
+    stages.forEach(s => s.style.backgroundColor = '');
+    stages[current].style.backgroundColor = 'lightgreen';
+    current = (current + 1) % stages.length;
+  }
+</script>
+
+</body>
+</html>
