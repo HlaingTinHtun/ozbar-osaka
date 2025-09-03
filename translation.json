@@ -5,15 +5,14 @@
     "gallery": "GALLERY",
     "tagline": "#OZ'.Bar / Drink • Chill • Repeat",
     "tagline2": "A modern and retro Japanese-style OZ'Bar",
-    "cozy":"We are a cozy bar serving quality drinks and creating unforgettable moments for our guests",
+    "cozy": "We are a cozy bar serving quality drinks and creating unforgettable moments for our guests",
     "contact": "Contact",
-    "address": "123 Shinjuku ,Tokyo Japan",
-    "phone1": "06-8786-8147",
-    "phone2": "090-37248489",
-    "email": "contact@ozbar.com",
-    "hours": "Daily 10:00 AM - 2:00 AM",
+    "address": "123 Shinjuku, Tokyo Japan",
+    "hours": "Hours",
+    "daily": "Daily 10:00 AM - 2:00 AM",
     "closed": "Closed Every Monday",
-    "social": "Join the party online — follow us for news, events, and special offers."
+    "social_media": "SOCIAL MEDIA",
+    "party": "Join the party online — follow us for news, events, and special offers."
   },
   "jp": {
     "about": "私たちについて",
@@ -21,14 +20,13 @@
     "gallery": "ギャラリー",
     "tagline": "#OZ'.Bar / ドリンク • チル • リピート",
     "tagline2": "モダンとレトロで、日本式の“隠れ家”バー",
-     "cozy":"日本語: 私たちは、上質なドリンクを提供し、お客様に忘れられないひとときをお届けする居心地の良いバーです。",
+    "cozy": "私たちは、上質なドリンクを提供し、お客様に忘れられないひとときをお届けする居心地の良いバーです。",
     "contact": "お問い合わせ",
-    "address": "東京都新宿区123",
-    "phone1": "06-8786-8147",
-    "phone2": "090-37248489",
-    "email": "contact@ozbar.com",
-    "hours": "毎日 10:00 AM - 2:00 AM",
-    "closed": "毎週月曜日 定休",
-    "social": "オンラインでも一緒に楽しみましょう — ニュース、イベント、特別オファーをフォロー！"
+    "address": "〒123 東京都新宿",
+    "hours": "営業時間",
+    "daily": "毎日 午前10:00 ～ 午前2:00",
+    "closed": "毎週月曜日 定休日",
+    "social_media": "ソーシャルメディア",
+    "party": "オンラインでもパーティーに参加しましょう ― ニュース、イベント、特別オファーをぜひフォローしてください。"
   }
 }

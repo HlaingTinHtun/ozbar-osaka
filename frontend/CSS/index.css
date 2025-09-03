@@ -43,6 +43,7 @@ body {
   font-weight: 600;
   font-size: 0.70rem;
   letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
 }
 .nav-link:hover {
   color: #d4a373;
