@@ -4,10 +4,10 @@
 }
 
 .map-title {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-bottom: 15px;
-  font-size: normal;
-  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
 }
 
 .map-container {

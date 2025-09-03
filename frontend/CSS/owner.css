@@ -1,7 +1,7 @@
    .brick-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      max-width: 700px;
+      max-width: 900px;
       margin: 50px auto;
       align-items: center;
       justify-items: center;
@@ -25,11 +25,11 @@
     }
 
     .brick p {
-      font-family: "Rubik", sans-serif;
-      font-size: 10px;
-      line-height: 1.5;
+      font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.6;
       color: #333;
-      max-width: 220px;
+      max-width: 280px;
     }
 
     /* Make image1 bottom-right corner touch image2 top-left corner */
@@ -63,7 +63,7 @@
 
   .brick p {
     max-width: 100%; /* full width */
-    font-size: 14px; /* slightly smaller text */
+    font-size: 1rem; /* appropriate mobile size */
   }
 
   /* Center images in stacked layout */
@@ -81,7 +81,7 @@
   }
 
   .brick p {
-    font-size: 13px;
-    line-height: 1.4;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 }
