@@ -1,7 +1,7 @@
 .lang-switch {
   display: flex;
   justify-content: flex-end;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
   position: fixed;
   top: 15px;   /* smaller offset */
   right: 15px; /* keep some space from edge */
@@ -10,12 +10,13 @@
 
 /* Tiny dropdown button */
 .dropbtn {
-  background-color: indigo;
+  background-color: #222;
   color: white;
   border: 1px solid rgba(255,255,255,0.3);
   border-radius: 5px;
-  padding: 0.15rem 0.4rem;
-  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -25,9 +26,9 @@
 
 /* Hover */
 .dropbtn:hover {
-  background-color: white;
-  border-color: #f21111;
-  color: indigo;
+  background-color: #e30d0d;
+  border-color: #e30d0d;
+  color: white;
 }
 
 /* Arrow */
@@ -45,23 +46,24 @@
   margin-top: 5px; /* avoid overlap */
   position: absolute;
   right: 0;
-  background-color: indigo;
-  min-width: 75px;
+  background-color: #222;
+  min-width: 85px;
   border-radius: 5px;
   overflow: hidden;
   z-index: 1000;
 }
 .dropdown-content a {
   color: #fff;
-  padding: 0.3rem 0.5rem;
+  padding: 0.4rem 0.6rem;
   display: block;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
   text-decoration: none;
   text-align: center;
 }
 .dropdown-content a:hover {
-  background-color: white;
-  color: indigo;
+  background-color: #e30d0d;
+  color: white;
 }
 .footer-lang-switch{
   margin-left: -65%;
@@ -79,19 +81,19 @@
     margin-top: 10px;
   }
   .dropbtn{
-   background-color: white; 
-   color: #0a0f2c;
-   border: none;
+   background-color: #222; 
+   color: white;
+   border: 1px solid rgba(255,255,255,0.3);
   }
   .footer-lang-switch .lang-switch {
     position: static;
     justify-content: center;
   }
   .dropdown-content {
-  background-color: white;
+  background-color: #222;
   }
   .dropdown-content a {
-  color: #0a0f2c;
+  color: white;
   }
   
 
